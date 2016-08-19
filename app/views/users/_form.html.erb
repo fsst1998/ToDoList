@@ -5,22 +5,22 @@
 
       <ul>
       <% @user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <font size="4"><li><%= message %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
   <div class="field">
-    <%= f.label :userid ,"ユーザーID" %><br>
+    <font size="4"><%= f.label :userid ,"ユーザーID" %></font><br>
     <%= f.text_field :userid %>
   </div>
   <div class="field">
-    <%= f.label :username ,"ユーザー名" %><br>
+    <font size="4"><%= f.label :username ,"ユーザー名" %><br>
     <%= f.text_field :username %>
   </div>
   <div class="field">
-    <%= f.label :password ,"パスワード" %><br>
+    <font size="4"><%= f.label :password ,"パスワード" %><br>
     <%= f.text_field :password %>
   </div>
   <div class="actions">

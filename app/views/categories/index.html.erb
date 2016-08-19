@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>カテゴリー名</th>
+      <font size="4"><th>カテゴリー名</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -13,10 +13,10 @@
   <tbody>
     <% @categories.each do |category| %>
       <tr>
-        <td><%= category.categoryname %></td>
-        <td><%= link_to '詳細', category %></td>
-        <td><%= link_to '編集', edit_category_path(category) %></td>
-        <td><%= link_to '削除', category, method: :delete, data: { confirm: '削除しますか？' } %></td>
+        <td><font size="4"><%= category.categoryname %></td>
+        <td><font size="4"><%= link_to '詳細', category %></td>
+        <td><font size="4"><%= link_to '編集', edit_category_path(category) %></td>
+        <td><font size="4"><%= link_to '削除', category, method: :delete, data: { confirm: '削除しますか？' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'カテゴリー新規作成', new_category_path %>
+<font size="5"><%= link_to 'カテゴリー新規作成', new_category_path %>

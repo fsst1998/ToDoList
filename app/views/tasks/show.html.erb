@@ -1,28 +1,28 @@
 ﻿<p id="notice"><%= notice %></p>
 
 <p>
-  <strong>期日:</strong>
-  <%= @task.due_date %>
+  <font size="4"><strong>期日:</strong>
+  <%= @task.due_date %></font>
 </p>
 
 <p>
-  <strong>カテゴリー:</strong>
-  <%= @task.category.categoryname %>
+  <font size="4"><strong>カテゴリー:</strong>
+  <%= @task.category.categoryname %></font>
 </p>
 
 <p>
-  <strong>名前:</strong>
-  <%= @task.name %>
+  <font size="4"><strong>名前:</strong>
+  <%= @task.name %></font>
 </p>
 
 <p>
-  <strong>完了:</strong>
-  <%= @task.done %>
+  <font size="4"><strong>完了:</strong>
+  <%= @task.done %></font>
 </p>
 
 <p>
-  <strong>ユーザー:</strong>
-  <%= @task.user.username %>
+  <font size="4"><strong>ユーザー:</strong>
+  <%= @task.user.username %></font>
 </p>
 
 <%= link_to '編集', edit_task_path(@task) %> |
